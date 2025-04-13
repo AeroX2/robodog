@@ -1,0 +1,140 @@
+{
+  "limits": {
+    "elements": [
+      {
+        "max": {
+          "effort": 0.0,
+          "position": 3.140000104904175,
+          "speed": 0.0
+        },
+        "min": {
+          "position": -3.140000104904175
+        }
+      },
+      {
+        "max": {
+          "effort": 0.0,
+          "position": 3.140000104904175,
+          "speed": 0.0
+        },
+        "min": {
+          "position": -3.140000104904175
+        }
+      },
+      {
+        "max": {
+          "effort": 0.0,
+          "position": 1.5707963267948966,
+          "speed": 0.0
+        },
+        "min": {
+          "position": -0.5235987755982988
+        }
+      },
+      {
+        "max": {
+          "effort": 0.0,
+          "position": 3.140000104904175,
+          "speed": 0.0
+        },
+        "min": {
+          "position": -3.140000104904175
+        }
+      },
+      {
+        "max": {
+          "effort": 0.0,
+          "position": 3.140000104904175,
+          "speed": 0.0
+        },
+        "min": {
+          "position": -3.140000104904175
+        }
+      },
+      {
+        "max": {
+          "effort": 0.0,
+          "position": 0.5235987755982988,
+          "speed": 0.0
+        },
+        "min": {
+          "position": -1.5707963267948966
+        }
+      },
+      {
+        "max": {
+          "effort": 0.0,
+          "position": 3.140000104904175,
+          "speed": 0.0
+        },
+        "min": {
+          "position": -3.140000104904175
+        }
+      },
+      {
+        "max": {
+          "effort": 0.0,
+          "position": 3.140000104904175,
+          "speed": 0.0
+        },
+        "min": {
+          "position": -3.140000104904175
+        }
+      },
+      {
+        "max": {
+          "effort": 0.0,
+          "position": 1.5707963267948966,
+          "speed": 0.0
+        },
+        "min": {
+          "position": -0.5235987755982988
+        }
+      },
+      {
+        "max": {
+          "effort": 0.0,
+          "position": 3.140000104904175,
+          "speed": 0.0
+        },
+        "min": {
+          "position": -3.140000104904175
+        }
+      },
+      {
+        "max": {
+          "effort": 0.0,
+          "position": 3.140000104904175,
+          "speed": 0.0
+        },
+        "min": {
+          "position": -3.140000104904175
+        }
+      },
+      {
+        "max": {
+          "effort": 0.0,
+          "position": 0.5235987755982988,
+          "speed": 0.0
+        },
+        "min": {
+          "position": -1.5707963267948966
+        }
+      }
+    ],
+    "names": [
+      "back_left_bot_leg_link_joint",
+      "back_left_mid_leg_link_joint",
+      "back_left_top_leg_link_joint",
+      "back_right_bot_leg_link_joint",
+      "back_right_mid_leg_link_joint",
+      "back_right_top_leg_link_joint",
+      "front_left_bot_leg_link_joint",
+      "front_left_mid_leg_link_joint",
+      "front_left_top_leg_link_joint",
+      "front_right_bot_leg_link_joint",
+      "front_right_mid_leg_link_joint",
+      "front_right_top_leg_link_joint"
+    ]
+  }
+}

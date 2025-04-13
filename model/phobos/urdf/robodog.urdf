@@ -1,0 +1,327 @@
+<robot name="robodog" version="1.0">
+  <joint name="back_left_bot_leg_link_joint" type="revolute">
+    <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="0.00000 0.00000 0.00000" xyz="0.35179 0.41990 -0.00481"/>
+    <parent link="back_left_mid_leg_link"/>
+    <child link="back_left_bot_leg_link"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="back_left_mid_leg_link_joint" type="revolute">
+    <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="-1.57080 -0.00000 0.00000" xyz="0.07103 0.13951 -0.49515"/>
+    <parent link="back_left_top_leg_link"/>
+    <child link="back_left_mid_leg_link"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="back_left_top_leg_link_joint" type="revolute">
+    <limit lower="-0.52360" upper="1.57080" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="-1.57080 1.54462 3.14159" xyz="0.33081 0.34784 -0.07472"/>
+    <parent link="main_link"/>
+    <child link="back_left_top_leg_link"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="back_right_bot_leg_link_joint" type="revolute">
+    <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="0.00000 0.00000 -0.00000" xyz="-0.35179 0.41990 -0.00481"/>
+    <parent link="back_right_mid_leg_link"/>
+    <child link="back_right_bot_leg_link"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="back_right_mid_leg_link_joint" type="revolute">
+    <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="-1.57079 -0.00000 -0.01697" xyz="-0.06860 0.14163 -0.49515"/>
+    <parent link="back_right_top_leg_link"/>
+    <child link="back_right_mid_leg_link"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="back_right_top_leg_link_joint" type="revolute">
+    <limit lower="-1.57080" upper="0.52360" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="-1.57080 -1.54462 3.14159" xyz="-0.32753 0.34784 -0.07476"/>
+    <parent link="main_link"/>
+    <child link="back_right_top_leg_link"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="front_left_bot_leg_link_joint" type="revolute">
+    <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="-0.00000 0.00000 -0.08125" xyz="0.32430 0.44600 0.07792"/>
+    <parent link="front_left_mid_leg_link"/>
+    <child link="front_left_bot_leg_link"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="front_left_mid_leg_link_joint" type="revolute">
+    <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="-1.57080 0.00000 -0.00000" xyz="0.07403 0.07293 -0.28308"/>
+    <parent link="front_left_top_leg_link"/>
+    <child link="front_left_mid_leg_link"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="front_left_top_leg_link_joint" type="revolute">
+    <limit lower="-0.52360" upper="1.57080" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="-1.57082 1.56207 3.14159" xyz="0.33081 -1.00714 -0.07472"/>
+    <parent link="main_link"/>
+    <child link="front_left_top_leg_link"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="front_right_bot_leg_link_joint" type="revolute">
+    <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="-0.00000 0.00000 -0.00000" xyz="-0.28704 0.47085 0.04169"/>
+    <parent link="front_right_mid_leg_link"/>
+    <child link="front_right_bot_leg_link"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="front_right_mid_leg_link_joint" type="revolute">
+    <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="-1.57080 -0.00000 0.00136" xyz="-0.07415 0.10999 -0.28308"/>
+    <parent link="front_right_top_leg_link"/>
+    <child link="front_right_mid_leg_link"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="front_right_top_leg_link_joint" type="revolute">
+    <limit lower="-1.57080" upper="0.52360" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="-1.57082 -1.56207 -3.14159" xyz="-0.32753 -1.00714 -0.07476"/>
+    <parent link="main_link"/>
+    <child link="front_right_top_leg_link"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="main_link_joint" type="fixed">
+    <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 1.00000"/>
+    <parent link="link_root"/>
+    <child link="main_link"/>
+  </joint>
+  <link name="back_left_bot_leg_link">
+    <collision name="back_right_bot_leg_collision.002">
+      <origin rpy="3.14159 0.05236 3.14159" xyz="0.48243 -0.47826 0.01883"/>
+      <geometry>
+        <sphere radius="0.10458"/>
+      </geometry>
+    </collision>
+    <collision name="back_right_mid_leg_collision.003">
+      <origin rpy="0.00000 -0.05236 -0.00000" xyz="0.00439 -0.00145 0.00327"/>
+      <geometry>
+        <cylinder radius="0.16016" length="0.14640"/>
+      </geometry>
+    </collision>
+    <collision name="front_right_bot_leg_collision.003">
+      <origin rpy="-2.14900 -1.52734 1.25025" xyz="0.28539 -0.23943 0.00831"/>
+      <geometry>
+        <cylinder radius="0.10289" length="0.37440"/>
+      </geometry>
+    </collision>
+    <visual name="back_left_bot_leg">
+      <origin rpy="-0.00000 -1.57080 0.00000" xyz="0.24928 -0.23135 0.01387"/>
+      <geometry>
+        <mesh filename="../meshes/stl/back_left_bot_leg_mesh.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="back_left_mid_leg_link">
+    <collision name="back_right_mid_leg_collision.005">
+      <origin rpy="0.00000 -0.05236 0.00000" xyz="0.12957 0.20702 0.02877"/>
+      <geometry>
+        <cylinder radius="0.14306" length="0.15862"/>
+      </geometry>
+    </collision>
+    <visual name="back_left_mid_leg">
+      <origin rpy="-0.00000 -1.57080 0.00000" xyz="0.10737 0.15318 -0.02877"/>
+      <geometry>
+        <mesh filename="../meshes/stl/back_left_mid_leg_mesh.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="back_left_top_leg_link">
+    <collision name="back_right_top_leg_collision.002">
+      <origin rpy="0.00000 0.00000 1.62316" xyz="-0.00021 0.00118 -0.36525"/>
+      <geometry>
+        <cylinder radius="0.22085" length="0.77385"/>
+      </geometry>
+    </collision>
+    <visual name="back_left_top_leg">
+      <origin rpy="-1.57080 0.00000 1.57080" xyz="0.00149 0.03541 -0.26310"/>
+      <geometry>
+        <mesh filename="../meshes/stl/back_left_top_leg_mesh.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="back_right_bot_leg_link">
+    <collision name="back_right_bot_leg_collision">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.48234 -0.47826 0.02128"/>
+      <geometry>
+        <sphere radius="0.10458"/>
+      </geometry>
+    </collision>
+    <collision name="back_right_mid_leg_collision">
+      <origin rpy="-3.14159 -0.00000 -3.14159" xyz="-0.00430 -0.00145 0.00573"/>
+      <geometry>
+        <cylinder radius="0.16016" length="0.14640"/>
+      </geometry>
+    </collision>
+    <collision name="front_right_bot_leg_collision.001">
+      <origin rpy="1.68526 1.49294 2.58292" xyz="-0.28530 -0.23943 0.01077"/>
+      <geometry>
+        <cylinder radius="0.10289" length="0.37440"/>
+      </geometry>
+    </collision>
+    <visual name="back_right_bot_leg">
+      <origin rpy="-0.00047 1.57080 -0.00047" xyz="-0.24928 -0.23135 0.01387"/>
+      <geometry>
+        <mesh filename="../meshes/stl/back_right_bot_leg_mesh.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="back_right_mid_leg_link">
+    <collision name="back_right_mid_leg_collision.007">
+      <origin rpy="-3.14159 -0.00000 -3.14159" xyz="-0.12958 0.20702 0.02709"/>
+      <geometry>
+        <cylinder radius="0.14306" length="0.15862"/>
+      </geometry>
+    </collision>
+    <collision name="back_right_top_leg_collision.004">
+      <origin rpy="1.55727 1.57080 -0.01353" xyz="0.07121 -0.12990 -0.14001"/>
+      <geometry>
+        <cylinder radius="0.22085" length="0.77385"/>
+      </geometry>
+    </collision>
+    <visual name="back_right_mid_leg">
+      <origin rpy="-0.00046 1.57080 -0.00046" xyz="-0.10737 0.15318 -0.02877"/>
+      <geometry>
+        <mesh filename="../meshes/stl/back_right_mid_leg_mesh.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="back_right_top_leg_link">
+    <visual name="back_right_top_leg">
+      <origin rpy="-1.57080 0.00000 -1.57080" xyz="-0.00145 0.03635 -0.26310"/>
+      <geometry>
+        <mesh filename="../meshes/stl/back_right_top_leg_mesh.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="front_left_bot_leg_link">
+    <collision name="back_right_bot_leg_collision.003">
+      <origin rpy="3.14159 0.03491 3.14159" xyz="0.58432 -0.34558 -0.01316"/>
+      <geometry>
+        <sphere radius="0.10458"/>
+      </geometry>
+    </collision>
+    <collision name="back_right_mid_leg_collision.004">
+      <origin rpy="0.00000 -0.03491 -0.00000" xyz="0.00450 -0.00054 -0.02091"/>
+      <geometry>
+        <cylinder radius="0.16016" length="0.14640"/>
+      </geometry>
+    </collision>
+    <collision name="front_right_bot_leg_collision.002">
+      <origin rpy="-1.27119 -1.50960 0.61101" xyz="0.31904 -0.18106 -0.01353"/>
+      <geometry>
+        <cylinder radius="0.10671" length="0.38831"/>
+      </geometry>
+    </collision>
+    <visual name="front_left_bot_leg">
+      <origin rpy="-3.14149 -1.57080 2.72566" xyz="0.20418 -0.26763 -0.01387"/>
+      <geometry>
+        <mesh filename="../meshes/stl/front_left_bot_leg_mesh.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="front_left_mid_leg_link">
+    <collision name="back_right_mid_leg_collision.006">
+      <origin rpy="0.00000 -0.03491 -0.00000" xyz="0.11676 0.23371 0.07240"/>
+      <geometry>
+        <cylinder radius="0.14307" length="0.17878"/>
+      </geometry>
+    </collision>
+    <visual name="front_left_mid_leg">
+      <origin rpy="3.14131 -1.57080 3.06063" xyz="0.16450 0.13713 0.04688"/>
+      <geometry>
+        <mesh filename="../meshes/stl/front_left_mid_leg_mesh.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="front_left_top_leg_link">
+    <collision name="back_right_top_leg_collision.003">
+      <origin rpy="0.00000 0.00000 1.60570" xyz="-0.00111 -0.00073 -0.35048"/>
+      <geometry>
+        <cylinder radius="0.21890" length="1.01216"/>
+      </geometry>
+    </collision>
+    <visual name="front_left_top_leg">
+      <origin rpy="-1.57080 0.00000 1.54900" xyz="-0.00014 -0.01537 -0.30264"/>
+      <geometry>
+        <mesh filename="../meshes/stl/front_left_top_leg_mesh.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="front_right_bot_leg_link">
+    <collision name="back_right_bot_leg_collision.001">
+      <origin rpy="-0.00000 -0.01745 0.00000" xyz="-0.58429 -0.34558 -0.01071"/>
+      <geometry>
+        <sphere radius="0.10458"/>
+      </geometry>
+    </collision>
+    <collision name="back_right_mid_leg_collision.001">
+      <origin rpy="-3.14159 0.01745 -3.14159" xyz="-0.00447 -0.00054 -0.01845"/>
+      <geometry>
+        <cylinder radius="0.16016" length="0.14640"/>
+      </geometry>
+    </collision>
+    <collision name="front_right_bot_leg_collision">
+      <origin rpy="2.00238 1.49464 2.66226" xyz="-0.32677 -0.18374 -0.01131"/>
+      <geometry>
+        <cylinder radius="0.10671" length="0.38831"/>
+      </geometry>
+    </collision>
+    <visual name="front_right_bot_leg">
+      <origin rpy="-0.00136 1.57080 -0.00136" xyz="-0.29489 -0.16235 -0.01387"/>
+      <geometry>
+        <mesh filename="../meshes/stl/front_right_bot_leg_mesh.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="front_right_mid_leg_link">
+    <collision name="back_right_mid_leg_collision.002">
+      <origin rpy="-3.14159 0.01745 -3.14159" xyz="-0.11676 0.23371 0.03450"/>
+      <geometry>
+        <cylinder radius="0.14307" length="0.17878"/>
+      </geometry>
+    </collision>
+    <visual name="front_right_mid_leg">
+      <origin rpy="-0.00135 1.57080 -0.00135" xyz="-0.15283 0.15003 0.01066"/>
+      <geometry>
+        <mesh filename="../meshes/stl/front_right_mid_leg_mesh.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="front_right_top_leg_link">
+    <collision name="back_right_top_leg_collision.001">
+      <origin rpy="0.00000 -0.00000 -1.55334" xyz="0.00113 -0.00147 -0.35048"/>
+      <geometry>
+        <cylinder radius="0.21890" length="1.01216"/>
+      </geometry>
+    </collision>
+    <visual name="front_right_top_leg">
+      <origin rpy="-1.57080 -0.00000 -1.57080" xyz="-0.00016 -0.01443 -0.30264"/>
+      <geometry>
+        <mesh filename="../meshes/stl/front_right_top_leg_mesh.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_root"/>
+  <link name="main_link">
+    <collision name="main_collision">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00237 -0.06618 -0.14242"/>
+      <geometry>
+        <box size="1.10281 2.56115 0.48185"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <inertia ixx="171.89884" ixy="-1.22866" ixz="-0.51910" iyy="15.22739" iyz="-3.72823" izz="178.30053"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.01367 -0.29864 -0.13982"/>
+      <mass value="1.00000"/>
+    </inertial>
+    <visual name="main">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00916 -0.31026 -0.16360"/>
+      <geometry>
+        <mesh filename="../meshes/stl/main_mesh.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>
