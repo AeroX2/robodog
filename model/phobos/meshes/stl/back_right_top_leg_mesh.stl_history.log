@@ -1,3 +1,0 @@
-Instantiated with filepath=None->None, scale=[1.0000001192092896, 1.0, 1.0000001192092896], mesh=<bpy_struct, Mesh("back_right_top_leg_mesh") at 0x000001CC07FBEFB0>, meshname=back_right_top_leg_mesh, material=None, mesh_orientation=None, {}
-->trying export of <bpy_struct, Mesh("back_right_top_leg_mesh") at 0x000001CC07FBEFB0> to C:\Users\James\Documents\git\robodog\model\phobos\meshes\stl\back_right_top_leg_mesh.stl
-->wrote stl to C:\Users\James\Documents\git\robodog\model\phobos\meshes\stl\back_right_top_leg_mesh.stl from bpy_types.Mesh
